@@ -82,5 +82,32 @@ article.post:last-of-type {
 }
 
 article.page h2 {
-    font-size: 500%;
+    font-size: 300%;
+}
+
+/* Layout */
+.title-column {
+    float:left;
+    width: 30%;
+}
+.text-column {
+    float: right;
+    width: 70%;
+}
+.text-column-left {
+    float: left;
+}
+
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix {
+    *zoom: 1;
+}
+
+.info-box {
+    width: 30%;
+    float: right;
+    margin: 0 0 30px 30px;
+    padding: 20px;
+    background-color: #EEE;
 }
