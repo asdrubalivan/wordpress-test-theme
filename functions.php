@@ -6,3 +6,9 @@ function learningWordpress_resources()
 }
 
 add_action('wp_enqueue_scripts','learningWordpress_resources');
+
+//Navigation Menus
+register_nav_menus([
+    'primary' => __('Primary Menu'),
+    'footer' => __('Footer Menu'),
+]);

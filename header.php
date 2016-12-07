@@ -11,4 +11,9 @@
             <header class="site-header">
                 <h1><a href="<?php home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
                 <h5><?php bloginfo('description'); ?></h5>
+                <nav class="site-nav">
+                    <?php 
+                        $args = ['theme_location' => 'header'];
+                        wp_nav_menu($args); ?>
+                </nav>
             </header>

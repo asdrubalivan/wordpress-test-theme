@@ -4,10 +4,9 @@
         while(have_posts()):
             the_post();
 ?>
-    <h1>
-    <a href="<?php echo the_permalink(); ?>">
-    <?php echo the_title(); ?></a></h1>
-    <article class="post">
+    <article class="post page">
+        <h2>
+        <?php echo the_title(); ?></h2>
         <?php the_content(); ?>
     </article>
 <?php
